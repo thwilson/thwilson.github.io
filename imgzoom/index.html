@@ -34,10 +34,13 @@ body {
 
 jQuery(function($){ // on DOM load
 	$('.zoomimg').zoomio({
-		fadeduration: 500,
-		w: '90%',
-		h: '90%
+		fadeduration: 500
 	})
+})
+
+$('#zoomimg').zoomio({
+	w: '90%',
+	h: '90%' 
 })
 
 </script>
@@ -45,7 +48,7 @@ jQuery(function($){ // on DOM load
 
 <body>
 <div class="container-flex">
-<img src="http://cdn.tegna-media.com/kpnx/weather/7_day_880_495_12news.jpg" alt="7 Day Forecast" title="7 Day Forecast" class="zoomimg">
+<img src="http://cdn.tegna-media.com/kpnx/weather/7_day_880_495_12news.jpg" alt="7 Day Forecast" title="7 Day Forecast" class="zoomimg" id="zoomimg">
 </div>
 </body>
 </html>
