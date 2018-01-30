@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-color:#000;
+	background:#000;
+	}
+@-ms-viewport{
+  width: device-width;
+}
+</style>
+<title></title>
+<style>
+
+/* sample CSS to set the initial dimensions of images that will be zoomable */
+.zoomimg{
+	width:100%;
+	height: auto;
+}
+
+
+</style>
+
+<link rel="stylesheet" href="zoomio.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="zoomio.js"></script>
+<script>
+
+jQuery(function($){ // on DOM load
+	$('.zoomimg').zoomio({
+		fadeduration: 500
+	})
+})
+
+</script>
+</head>
+
+<body>
+<div class="container-flex">
+<img src="http://cdn.tegna-media.com/kpnx/weather/7_day_880_495_12news.jpg" alt="7 Day Forecast" title="7 Day Forecast" class="zoomimg">
+</div>
+</body>
+</html>
