@@ -1,0 +1,363 @@
+body {
+    margin: 0 auto;
+    background-color: #000;
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-black-webfont.eot);
+    src: url(fonts/proximanova-black-webfont.woff2) format("woff2"), url(../fonts/proximanova-black-webfont.woff) format("woff"), url(../fonts/proximanova-black-webfont.ttf) format("truetype");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-extrabold-webfont.eot);
+    src: url(fonts/proximanova-extrabold-webfont.woff2) format("woff2"), url(../fonts/proximanova-extrabold-webfont.woff) format("woff"), url(../fonts/proximanova-extrabold-webfont.ttf) format("truetype"), ;
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-bold-webfont.eot);
+    src: url(fonts/proximanova-bold-webfont.woff2) format("woff2"), url(../fonts/proximanova-bold-webfont.woff) format("woff"), url(../fonts/proximanova-bold-webfont.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-boldit-webfont.eot);
+    src: url(fonts/proximanova-boldit-webfont.woff2) format("woff2"), url(../fonts/proximanova-boldit-webfont.woff) format("woff"), url(../fonts/proximanova-boldit-webfont.ttf) format("truetype");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-semibold-webfont.eot);
+    src: url(fonts/proximanova-semibold-webfont.woff2) format("woff2"), url(../fonts/proximanova-semibold-webfont.woff) format("woff"), url(../fonts/proximanova-semibold-webfont.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-regularit-webfont.eot);
+    src: url(fonts/proximanova-regularit-webfont.woff2) format("woff2"), url(../fonts/proximanova-regularit-webfont.woff) format("woff"), url(../fonts/proximanova-regularit-webfont.ttf) format("truetype");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-regular-webfont.eot);
+    src: url(fonts/proximanova-regular-webfont.woff2) format("woff2"), url(../fonts/proximanova-regular-webfont.woff) format("woff"), url(../fonts/proximanova-regular-webfont.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+body {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body,
+div,
+p {
+    box-sizing: border-box;
+    font-family: proximanova !important;
+}
+
+#poster {
+    display: block;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    background: #000;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.posterimg {
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.posterleft {
+    width: 50%;
+    height: auto;
+    display: inline;
+    vertical-align: middle;
+    float: left; 
+}
+.posterright {
+    width: 50%;
+    height: auto;
+    display: middle;
+    float: left;
+}
+
+
+.posterleft h1 {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 1.31;
+    vertical-align: middle;
+    padding: 1em 0;
+    text-align: center;
+    max-width: 446px;
+    margin: 0 auto;
+}
+
+
+#learnmore {
+    color: #000;
+    background-color: #ff9409;
+}
+
+
+.takeaction, .questions {
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    
+}
+
+.takeaction h2, .questionstext h2 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.social {
+    display: inline;
+    width: 50%;
+    float: left;
+}
+
+.shareicon {
+    width: 103px;
+    height: auto;
+    border: none;
+    display: inline;
+    padding: 0 1%;
+}
+
+.icon {
+    width: 47px;
+    height: auto;
+    border: none;
+}
+
+.callprovider {
+    width: 50%;
+    display: inline;
+    float: right;
+}
+
+.actioncenter, .questionstext {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 1em;
+    font-weight: bold;
+}
+.actioncenter p {
+    font-size: 24px;
+}
+
+#phone {
+    font-size: 26px !important;
+    font-weight: bold !important;
+    color: #045ea8;
+}
+
+.watchprograms {
+    background-color: #045ea8;
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+}
+
+.watchprograms h2 {
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.watchcenter p {
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.questions {
+    background-color: #fff;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 2em;
+    width: 100%;
+
+}
+.qbox {
+    max-width: 976px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.questionstext {
+   display: inline;
+   float: left;
+   text-align: left;
+   width: 50%;
+   max-width: 356px;
+}
+.questionstext h2 {
+   font-size: 46px;
+   font-weight: bold;
+}
+.questionstext p {
+    font-size: 18px;
+}
+
+.learnmore {
+    width: 50%;
+    display: inline;
+    float: right;
+    padding-top: 10%;
+}
+#learnmorebox {
+    width: 250px;
+    max-width: 250px;
+    height: 60px;
+    margin: 28px 0 22px 133px;
+    padding: 19px 14px 15px 13px;
+    background-color: #ff9409;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* MOBILE DISPLAY */
+@media only screen and (max-width: 400px) {
+    main {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    #poster {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        height: auto;
+    }
+    .posterleft {
+        width: 100%;
+        text-align: center;
+        padding: 10px 10px 20px 10px;
+    }
+    .posterleft h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 32px;
+        left: 0;
+        line-height: 1.31;
+        text-align: center;
+        display: block;
+        margin: auto 0;
+        padding: 0;
+    }
+    .posterright {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    .posterimg {
+        width: 100%;
+        height: auto;
+        max-height: auto;
+        border: none;
+        padding: 0;
+    }
+    .takeaction h2, .questionstext h2 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .takeaction {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    .takeaction p {
+        width: 330px;
+    }
+    .actioncenter p {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: normal;
+    }
+    .social, .callprovider {
+        width: 330px;
+        display: block;
+        float: none;
+        padding-bottom: 2em;
+    }
+    .social p, .callprovider p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .actioncenter, .questionstext {
+        width: 330px;
+    }
+    .watchprograms h2 {
+    font-size: 32px; 
+    }
+    .watchcenter p {
+        max-width: 330px;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.5;
+    }
+    .callprovider {
+        padding-bottom: 0px;
+    }
+    .questions {
+        padding-bottom: 2em;
+    }
+    .questionstext {
+        display: block;
+        float: none;
+        text-align: center;
+        width: 50%;
+    }
+    .questionstext p {
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .learnmore {
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    #learnmorebox {
+        padding: 19px 14px 15px 13px;
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
