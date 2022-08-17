@@ -71,6 +71,10 @@ p {
     font-family: proximanova !important;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 #poster {
     display: block;
     background: #000;
@@ -261,6 +265,10 @@ p {
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
+}
+
+#phone a:link {
+    text-decoration: none;
 }
 
 .watchprograms {
@@ -488,12 +496,23 @@ footer {
         height: auto;
     }
 
-    #phone {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        font-size: 26px;
-    }
+   #phone {
+    font-weight: bold;
+    color: #045ea8;
+    line-height: 1.38;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 26px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+#phone a:link {
+    text-decoration: none;
+}
 
     .social {
         display: inline;
