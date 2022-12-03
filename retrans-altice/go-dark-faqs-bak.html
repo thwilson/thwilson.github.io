@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="https://www.tegna.com/wp-content/uploads/2021/03/cropped-T_favicon_512x512-192x192.png" sizes="192x192" />
+    <title>KeepMyLocalTV.com - FAQs- TEGNA</title>
+    <style>
+        body {
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #fff;
+            text-align: center;
+            font-size: 20px;
+            padding: 40px 0;
+            font-weight: bold;
+        }
+
+        @font-face {
+            font-family: proximanova;
+            src: url(fonts/proximanova-black-webfont.eot);
+            src: url(fonts/proximanova-black-webfont.woff2) format("woff2"), url(/fonts/proximanova-black-webfont.woff) format("woff"), url(/fonts/proximanova-black-webfont.ttf) format("truetype");
+            font-weight: 900;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: proximanova;
+            src: url(fonts/proximanova-extrabold-webfont.eot);
+            src: url(fonts/proximanova-extrabold-webfont.woff2) format("woff2"), url(/fonts/proximanova-extrabold-webfont.woff) format("woff"), url(/fonts/proximanova-extrabold-webfont.ttf) format("truetype"),;
+            font-weight: 800;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: proximanova;
+            src: url(fonts/proximanova-bold-webfont.eot);
+            src: url(fonts/proximanova-bold-webfont.woff2) format("woff2"), url(/fonts/proximanova-bold-webfont.woff) format("woff"), url(/fonts/proximanova-bold-webfont.ttf) format("truetype");
+            font-weight: 700;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: proximanova;
+            src: url(fonts/proximanova-boldit-webfont.eot);
+            src: url(fonts/proximanova-boldit-webfont.woff2) format("woff2"), url(/fonts/proximanova-boldit-webfont.woff) format("woff"), url(/fonts/proximanova-boldit-webfont.ttf) format("truetype");
+            font-weight: 700;
+            font-style: italic
+        }
+
+        @font-face {
+            font-family: proximanova;
+            src: url(fonts/proximanova-semibold-webfont.eot);
+            src: url(fonts/proximanova-semibold-webfont.woff2) format("woff2"), url(/fonts/proximanova-semibold-webfont.woff) format("woff"), url(/fonts/proximanova-semibold-webfont.ttf) format("truetype");
+            font-weight: 600;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: proximanova;
+            src: url(fonts/proximanova-regularit-webfont.eot);
+            src: url(fonts/proximanova-regularit-webfont.woff2) format("woff2"), url(/fonts/proximanova-regularit-webfont.woff) format("woff"), url(/fonts/proximanova-regularit-webfont.ttf) format("truetype");
+            font-weight: 500;
+            font-style: italic
+        }
+
+        @font-face {
+            font-family: proximanova;
+            src: url(fonts/proximanova-regular-webfont.eot);
+            src: url(fonts/proximanova-regular-webfont.woff2) format("woff2"), url(/fonts/proximanova-regular-webfont.woff) format("woff"), url(/fonts/proximanova-regular-webfont.ttf) format("truetype");
+            font-weight: 500;
+            font-style: normal
+        }
+
+        body,
+        div,
+        p {
+            box-sizing: border-box;
+            font-family: proximanova !important;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 46px;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        h2 {
+            max-width: 900px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .filterbox {
+            width: 285px;
+            height: 51px;
+            padding: 19px 24px 15px;
+            background-color: #045ea8;
+            color: #fff;
+        }
+
+        .stationrow {
+            display: block;
+        }
+
+        .stationimg {
+            display: inline;
+            float: left;
+            width: 164px;
+            height: auto;
+            max-width: 164px;
+        }
+
+        .questionbox {
+            position: relative;
+            width: 100%;
+            max-width: 960px;
+            margin-bottom: 2px;
+            padding: 0 50px 0 24px;
+            border-left: 8px solid #045ea8;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            font-weight: 800;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+
+            .questionbox:first-of-type {
+                margin-top: 50px;
+            }
+
+        .question {
+            padding: 10px 0;
+            margin: 0;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .arrow {
+            position: absolute;
+            right: 20px;
+            transition: .4s;
+        }
+
+            .arrow_flipped_true {
+                transform: rotate(-180deg);
+            }
+
+        .answer {
+            font-family: proximanova !important;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.67;
+            padding-left: 32px;
+            opacity: 0;
+            max-height: 0px;
+            overflow: hidden;
+            transition: opacity ease .4s, max-height ease .2s;
+            padding: 0 32px;
+        }
+
+            .answer p:last-child {
+                padding-bottom: 16px;
+            }
+
+        .answer_open_true {
+            max-height: 1000px;
+            opacity: 1;
+        }
+
+        main {
+            width: 100%;
+            max-width: 970px;
+            margin: 0 auto;
+        }
+
+            main img {
+                width: 100%;
+                height: auto;
+            }
+
+    </style>
+    <script>
+        (() => {
+            window.onload = function() {
+                setupHandlers();
+            };
+
+            let setupHandlers = function() {
+                let questions = document.getElementsByClassName('questionbox');
+                [...questions].forEach(question => {
+                    question.addEventListener('click', function () {
+                        let answer = this.nextElementSibling.className.includes('answer') ? this.nextElementSibling : null;
+                        let arrow = this.getElementsByClassName("arrow")[0];
+                        if (answer) {
+                            if (answer.className.includes('answer_open_true')) {
+                                answer.classList.remove('answer_open_true');
+                                arrow.classList.remove('arrow_flipped_true');
+                            } else {
+                                answer.className += " answer_open_true";
+                                arrow.className += " arrow_flipped_true";
+                            }
+                        }
+                    });
+				});
+            };
+        })()
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>Altice Has Taken Away Access to your Favorite NBC Programming, Local News, Weather and Sports</h1>
+        <div class="questionbox">
+            <div class="arrow"><img src="images/arrow-down.png"></div>
+            <h2 class="question">Q: How can Altice just cut off access to a local broadcast station when local broadcast is so important for communities?</h2>
+        </div>
+        <div class="answer">
+            <p>A: Unfortunately,  Altice has dropped hundreds of essential local broadcast stations since the start  of the pandemic. In fact, Altice drops more TV channels than any other pay-TV  company in America, by far. Regardless, we are committed to reaching fair deals  with every pay-TV company because that&rsquo;s how we are able to deliver the  absolute best local news and weather, sports and entertainment, and to be there  when our neighbors need us. </p>
+<p>We hope Altice appreciates how important access to our station is and restores your access to the channels you deserve by reaching a fair, market-based agreement. </p>
+        </div>
+        <div class="questionbox">
+            <div class="arrow"><img src="images/arrow-down.png"></div>
+            <h2 class="question">Q: How can I watch my favorite sports, news and entertainment programs?</h2>
+        </div>
+        <div class="answer">
+            <p>A: You have choices. Our station is available on other service providers in our community. Fortunately, everywhere Altice is available, DIRECTV is too. DIRECTV is offering $150 prepaid VISA gift cards for Altice customers who switch. Visit the “Switch Now” section of this website to learn more about your options to get your channels back.  </p>
+        </div>
+        <div class="questionbox">
+            <div class="arrow"><img src="images/arrow-down.png"></div>
+            <h2 class="question">Q: Why is Altice refusing to reach an agreement to carry your station?</h2>
+        </div>
+        <div class="answer">
+            <p>A: We cannot speak for Altice. But here is what you should know: We are committed to reaching fair, market-based agreements with every pay-TV company. We've successfully reached hundreds of multi-year deals with distributors across the country over the past several years, including Comcast, Altice, DIRECTV and many others. Unfortunately, Altice drops more channels than any pay-TV company in the country, forcing customers to pay the price for their refusal to negotiate fair deals by depriving their customers of hundreds of channels at a time. We've learned that Altice announced an additional charge of $5 per month to customers, while offering fewer channels. Consider switching to one of the many providers that continue to carry our station and learn more about your options at the “Switch Now” section of this website.</p>
+        </div>
+        <div class="questionbox">
+            <div class="arrow"><img src="images/arrow-down.png"></div>
+            <h2 class="question">Q: I have heard Altice say that they want to carry local stations, but programmers simply won't let them carry the station anymore. Is that true?</h2>
+        </div>
+        <div class="answer">
+            <p>A: No. Having dropped more than 230 channels last year alone, Altice knows perfectly well this is misleading. In fact, every channel on the dial requires an underlying agreement for Altice to carry it. And it is Altice, not us, that has refused to reach a fair, market-based deal. </p>
+        </div>
+        <div class="questionbox">
+            <div class="arrow"><img src="images/arrow-down.png"></div>
+            <h2 class="question">Q: Why should Altice have to pay to carry station programming when the signal is free over-the-air?</h2>
+        </div>
+        <div class="answer">
+            <p>A: Our signal is free to viewers, not to Altice. Broadcast stations like ours are a big part of Altice's value to viewers and all we ask for is fair compensation for that value - after all, we are working harder and investing more in our programming and local communities than ever before.</p>
+        </div>
+        <div class="questionbox">
+            <div class="arrow"><img src="images/arrow-down.png"></div>
+            <h2 class="question">Q: I have heard Altice say that programmers demanding big fee increases, which would lead to higher bills. Is that true?</h2>
+        </div>
+        <div class="answer">
+            <p>A: No. That is an example of Altice misleading its own customers. In fact, Altice has dropped hundreds of channels in just the past two years, but its prices didn't come down at all. The fact is, Altice just announced they are going to charge customers $5 more every month, despite offering fewer channels. By contrast, we have reached deals with hundreds of pay-TV providers - all of which felt they were able to reach a fair deal with us while continuing to offer value to their subscribers.</p>
+        </div>
+        <div class="questionbox">
+            <div class="arrow"><img src="images/arrow-down.png"></div>
+            <h2 class="question">Q: Isn't it unfair that I lost access to a channel that I'm paying for just because two companies can't reach a deal?</h2>
+        </div>
+        <div class="answer">
+            <p>A: We agree - it is unfair. After all, you pay your bill to Altice every month. You deserve the full set of channels you are paying for and you shouldn't miss one minute of the programming you love. Consider switching to one of the many providers that continue to carry our station and learn more about your options at the “Switch Now” section of this website.</p>
+        </div>
+    </main>
+    <footer>©TEGNA Inc. 2022. All Rights Reserved.</footer>
+</body>
+</html>
