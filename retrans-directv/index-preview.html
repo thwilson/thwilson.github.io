@@ -1,188 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="normalize.css" />
     <style>
-        body {
-            margin: 0 auto;
-            background-color: #fff;
-        }
+      body {
+        margin: 0 auto;
+        background-color: #fff;
+      }
 
-        @font-face {
-            font-family: proximanova;
-            src: url(fonts/proximanova-black-webfont.eot);
-            src: url(fonts/proximanova-black-webfont.woff2) format("woff2"), url(fonts/proximanova-black-webfont.woff) format("woff"), url(fonts/proximanova-black-webfont.ttf) format("truetype");
-            font-weight: 900;
-            font-style: normal
-        }
+      @font-face {
+        font-family: proximanova;
+        src: url(fonts/proximanova-black-webfont.eot);
+        src: url(fonts/proximanova-black-webfont.woff2) format("woff2"),
+          url(fonts/proximanova-black-webfont.woff) format("woff"),
+          url(fonts/proximanova-black-webfont.ttf) format("truetype");
+        font-weight: 900;
+        font-style: normal;
+      }
 
-        @font-face {
-            font-family: proximanova;
-            src: url(fonts/proximanova-extrabold-webfont.eot);
-            src: url(fonts/proximanova-extrabold-webfont.woff2) format("woff2"), url(fonts/proximanova-extrabold-webfont.woff) format("woff"), url(fonts/proximanova-extrabold-webfont.ttf) format("truetype"), ;
-            font-weight: 800;
-            font-style: normal
-        }
+      @font-face {
+        font-family: proximanova;
+        src: url(fonts/proximanova-extrabold-webfont.eot);
+        src: url(fonts/proximanova-extrabold-webfont.woff2) format("woff2"),
+          url(fonts/proximanova-extrabold-webfont.woff) format("woff"),
+          url(fonts/proximanova-extrabold-webfont.ttf) format("truetype");
+        font-weight: 800;
+        font-style: normal;
+      }
 
-        @font-face {
-            font-family: proximanova;
-            src: url(fonts/proximanova-bold-webfont.eot);
-            src: url(fonts/proximanova-bold-webfont.woff2) format("woff2"), url(fonts/proximanova-bold-webfont.woff) format("woff"), url(fonts/proximanova-bold-webfont.ttf) format("truetype");
-            font-weight: 700;
-            font-style: normal
-        }
+      @font-face {
+        font-family: proximanova;
+        src: url(fonts/proximanova-bold-webfont.eot);
+        src: url(fonts/proximanova-bold-webfont.woff2) format("woff2"),
+          url(fonts/proximanova-bold-webfont.woff) format("woff"),
+          url(fonts/proximanova-bold-webfont.ttf) format("truetype");
+        font-weight: 700;
+        font-style: normal;
+      }
 
-        @font-face {
-            font-family: proximanova;
-            src: url(fonts/proximanova-boldit-webfont.eot);
-            src: url(fonts/proximanova-boldit-webfont.woff2) format("woff2"), url(fonts/proximanova-boldit-webfont.woff) format("woff"), url(fonts/proximanova-boldit-webfont.ttf) format("truetype");
-            font-weight: 700;
-            font-style: italic
-        }
+      @font-face {
+        font-family: proximanova;
+        src: url(fonts/proximanova-boldit-webfont.eot);
+        src: url(fonts/proximanova-boldit-webfont.woff2) format("woff2"),
+          url(fonts/proximanova-boldit-webfont.woff) format("woff"),
+          url(fonts/proximanova-boldit-webfont.ttf) format("truetype");
+        font-weight: 700;
+        font-style: italic;
+      }
 
-        @font-face {
-            font-family: proximanova;
-            src: url(fonts/proximanova-semibold-webfont.eot);
-            src: url(fonts/proximanova-semibold-webfont.woff2) format("woff2"), url(fonts/proximanova-semibold-webfont.woff) format("woff"), url(fonts/proximanova-semibold-webfont.ttf) format("truetype");
-            font-weight: 600;
-            font-style: normal
-        }
+      @font-face {
+        font-family: proximanova;
+        src: url(fonts/proximanova-semibold-webfont.eot);
+        src: url(fonts/proximanova-semibold-webfont.woff2) format("woff2"),
+          url(fonts/proximanova-semibold-webfont.woff) format("woff"),
+          url(fonts/proximanova-semibold-webfont.ttf) format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
 
-        @font-face {
-            font-family: proximanova;
-            src: url(fonts/proximanova-regularit-webfont.eot);
-            src: url(fonts/proximanova-regularit-webfont.woff2) format("woff2"), url(fonts/proximanova-regularit-webfont.woff) format("woff"), url(fonts/proximanova-regularit-webfont.ttf) format("truetype");
-            font-weight: 500;
-            font-style: italic
-        }
+      @font-face {
+        font-family: proximanova;
+        src: url(fonts/proximanova-regularit-webfont.eot);
+        src: url(fonts/proximanova-regularit-webfont.woff2) format("woff2"),
+          url(fonts/proximanova-regularit-webfont.woff) format("woff"),
+          url(fonts/proximanova-regularit-webfont.ttf) format("truetype");
+        font-weight: 500;
+        font-style: italic;
+      }
 
-        @font-face {
-            font-family: proximanova;
-            src: url(fonts/proximanova-regular-webfont.eot);
-            src: url(fonts/proximanova-regular-webfont.woff2) format("woff2"), url(fonts/proximanova-regular-webfont.woff) format("woff"), url(fonts/proximanova-regular-webfont.ttf) format("truetype");
-            font-weight: 500;
-            font-style: normal
-        }
+      @font-face {
+        font-family: proximanova;
+        src: url(fonts/proximanova-regular-webfont.eot);
+        src: url(fonts/proximanova-regular-webfont.woff2) format("woff2"),
+          url(fonts/proximanova-regular-webfont.woff) format("woff"),
+          url(fonts/proximanova-regular-webfont.ttf) format("truetype");
+        font-weight: 500;
+        font-style: normal;
+      }
 
-        body,
-        div,
-        p {
-            box-sizing: border-box;
-            font-family: proximanova !important;
-            font-size: 18px;
-        }
+      body,
+      div,
+      p {
+        box-sizing: border-box;
+        font-family: proximanova !important;
+        font-size: 18px;
+      }
 
-         h1 {
-            max-width: 673px;
-            font-size: 46px;
-            font-weight: bold;
-        }
+      h1 {
+        max-width: 673px;
+        font-size: 46px;
+        font-weight: bold;
+      }
 
-        .filterbox{
-            width: 285px;
-            height: 51px;
-            padding: 19px 24px 15px;
-            background-color: #045ea8;
-            color: #fff;
-        }
-        
-        .stationrow {
-            display: block;
+      .filterbox {
+        width: 285px;
+        height: 51px;
+        padding: 19px 24px 15px;
+        background-color: #045ea8;
+        color: #fff;
+      }
 
-        }
+      .stationrow {
+        display: block;
+      }
 
-        .stationimg {
-            display: inline;
-            float: left;
-            width: 164px;
-            height: auto;
-            max-width: 164px;
+      .stationimg {
+        display: inline;
+        float: left;
+        width: 164px;
+        height: auto;
+        max-width: 164px;
+      }
 
-        }
+      main {
+        max-width: 970px;
+        margin: 0 auto;
+      }
+      main img {
+        width: 100%;
+        height: auto;
+      }
 
-        main {
-            max-width: 970px;
-            margin: 0 auto;
-        }
-        main img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* MOBILE DISPLAY */
-        @media only screen and (max-width: 400px) {
-           
-        }
+      /* MOBILE DISPLAY */
+      @media only screen and (max-width: 400px) {
+      }
     </style>
     <title></title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-       <h1>Keep My Local TV</h1>  
-       <p>We know how important your local station is to you. To begin, select your station. </p>
-        <div id="stationlogos">
-            <img src="images/logos/KAGS.png" alt="KAGS" title="KAGS" class="">
-            <img src="images/logos/KARE.png" alt="KARE" title="KARE" class="">
-            <img src="images/logos/KBMT.png" alt="KBMT" title="KBMT" class="">
-            <img src="images/logos/KCEN.png" alt="KCEN" title="KCEN" class="">
-            <img src="images/logos/KENS.png" alt="KENS" title="KENS" class="">
-            <img src="images/logos/KFMB.png" alt="KFMB" title="KFMB" class="">
-            <img src="images/logos/KFSM.png" alt="KFSM" title="KFSM" class="">
-            <img src="images/logos/KGW.png" alt="KGW" title="KGW" class="">
-            <img src="images/logos/KHOU.png" alt="KHOU" title="KHOU" class="">
-            <img src="images/logos/KIDY-KXVA.png" alt="KIDY/KXVA" title="KIDY/KXVA" class="">
-            <img src="images/logos/KIII.png" alt="KIII" title="KIII" class="">
-            <img src="images/logos/KING.png" alt="KING" title="KING" class="">
-            <img src="images/logos/KJAC.png" alt="KJAC" title="KJAC" class="">
-            <img src="images/logos/KMSB.png" alt="KMSB" title="KMSB" class="">
-            <img src="images/logos/KPNX.png" alt="KPNX" title="KPNX" class="">
-            <img src="images/logos/KREM.png" alt="KREM" title="KREM" class="">
-            <img src="images/logos/KSDK.png" alt="KSDK" title="KSDK" class="">
-            <img src="images/logos/KTHV.png" alt="KTHV" title="KTHV" class="">
-            <img src="images/logos/KTVB-KTFT.png" alt="KTVB-KTFT" title="KTVB-KTFT" class="">
-            <img src="images/logos/KUSA.png" alt="KUSA" title="KUSA" class="">
-            <img src="images/logos/KVUE.png" alt="KVUE" title="KVUE" class="">
-            <img src="images/logos/KWES.png" alt="KWES" title="KWES" class="">
-            <img src="images/logos/KXTV.png" alt="KXTV" title="KXTV" class="">
-            <img src="images/logos/KYTX.png" alt="KYTX" title="KYTX" class="">
-            <img src="images/logos/WATN.png" alt="WATN" title="WATN" class="">
-            <img src="images/logos/WBIR.png" alt="WBIR" title="WBIR" class="">
-            <img src="images/logos/WBNS.png" alt="WBNS" title="WBNS" class="">
-            <img src="images/logos/WCNC.png" alt="WCNC" title="WCNC" class="">
-            <img src="images/logos/WCSH-WLBZ.png" alt="WCSH/WLBZ" title="WCSH/WLBZ" class="">
-            <img src="images/logos/WFAA.png" alt="WFAA" title="WFAA" class="">
-            <img src="images/logos/WFMY.png" alt="WFMY" title="WFMY" class="">
-            <img src="images/logos/WGRZ.png" alt="WGRZ" title="WGRZ" class="">
-            <img src="images/logos/WHAS.png" alt="WHAS" title="WHAS" class="">
-            <img src="images/logos/WJXX.png" alt="WJXX" title="WJXX" class="">
-            <img src="images/logos/WKYC.png" alt="WKYC" title="WKYC" class="">
-            <img src="images/logos/WLTX.png" alt="WLTX" title="WLTX" class="">
-            <img src="images/logos/WMAZ.png" alt="WMAZ" title="WMAZ" class="">
-            <img src="images/logos/WNEP.png" alt="WNEP" title="WNEP" class="">
-            <img src="images/logos/WOI.png" alt="WOI" title="WOI" class="">
-            <img src="images/logos/WPMT.png" alt="WPMT" title="WPMT" class="">
-            <img src="images/logos/WQAD.png" alt="WQAD" title="WQAD" class="">
-            <img src="images/logos/WTHR.png" alt="WTHR" title="WTHR" class="">
-            <img src="images/logos/WTIC.png" alt="WTIC" title="WTIC" class="">
-            <img src="images/logos/WTLV.png" alt="WTLV" title="WTLV" class="">
-            <img src="images/logos/WTOL" alt="WTOL" title="WTOL" class="">
-            <img src="images/logos/WTSP.png" alt="WTSP" title="WTSP" class="">
-            <img src="images/logos/WUSA.png" alt="WUSA" title="WUSA" class="">
-            <img src="images/logos/WVEC.png" alt="WVEC" title="WVEC" class="">
-            <img src="images/logos/WWL.png" alt="WWL" title="WWL" class="">
-            <img src="images/logos/WXIA.png" alt="WXIA" title="WXIA" class="">
-            <img src="images/logos/WZDX.png" alt="WZDX" title="WZDX" class="">
-            <img src="images/logos/WZZM.png" alt="WZZM" title="WZZM" class="">
-
-        </div>
+      <h1>Keep My Local TV</h1>
+      <p>
+        We know how important your local station is to you. To begin, select
+        your station.
+      </p>
+      <div id="stationlogos">
+        <img src="images/logos/KAGS.png" alt="KAGS" title="KAGS" class="" />
+        <img src="images/logos/KARE.png" alt="KARE" title="KARE" class="" />
+        <img src="images/logos/KBMT.png" alt="KBMT" title="KBMT" class="" />
+        <img src="images/logos/KCEN.png" alt="KCEN" title="KCEN" class="" />
+        <img src="images/logos/KENS.png" alt="KENS" title="KENS" class="" />
+        <img src="images/logos/KFMB.png" alt="KFMB" title="KFMB" class="" />
+        <img src="images/logos/KFSM.png" alt="KFSM" title="KFSM" class="" />
+        <img src="images/logos/KGW.png" alt="KGW" title="KGW" class="" />
+        <img src="images/logos/KHOU.png" alt="KHOU" title="KHOU" class="" />
+        <img
+          src="images/logos/KIDY-KXVA.png"
+          alt="KIDY/KXVA"
+          title="KIDY/KXVA"
+          class=""
+        />
+        <img src="images/logos/KIII.png" alt="KIII" title="KIII" class="" />
+        <img src="images/logos/KING.png" alt="KING" title="KING" class="" />
+        <img src="images/logos/KJAC.png" alt="KJAC" title="KJAC" class="" />
+        <img src="images/logos/KMSB.png" alt="KMSB" title="KMSB" class="" />
+        <img src="images/logos/KPNX.png" alt="KPNX" title="KPNX" class="" />
+        <img src="images/logos/KREM.png" alt="KREM" title="KREM" class="" />
+        <img src="images/logos/KSDK.png" alt="KSDK" title="KSDK" class="" />
+        <img src="images/logos/KTHV.png" alt="KTHV" title="KTHV" class="" />
+        <img
+          src="images/logos/KTVB-KTFT.png"
+          alt="KTVB-KTFT"
+          title="KTVB-KTFT"
+          class=""
+        />
+        <img src="images/logos/KUSA.png" alt="KUSA" title="KUSA" class="" />
+        <img src="images/logos/KVUE.png" alt="KVUE" title="KVUE" class="" />
+        <img src="images/logos/KWES.png" alt="KWES" title="KWES" class="" />
+        <img src="images/logos/KXTV.png" alt="KXTV" title="KXTV" class="" />
+        <img src="images/logos/KYTX.png" alt="KYTX" title="KYTX" class="" />
+        <img src="images/logos/WATN.png" alt="WATN" title="WATN" class="" />
+        <img src="images/logos/WBIR.png" alt="WBIR" title="WBIR" class="" />
+        <img src="images/logos/WBNS.png" alt="WBNS" title="WBNS" class="" />
+        <img src="images/logos/WCNC.png" alt="WCNC" title="WCNC" class="" />
+        <img
+          src="images/logos/WCSH-WLBZ.png"
+          alt="WCSH/WLBZ"
+          title="WCSH/WLBZ"
+          class=""
+        />
+        <img src="images/logos/WFAA.png" alt="WFAA" title="WFAA" class="" />
+        <img src="images/logos/WFMY.png" alt="WFMY" title="WFMY" class="" />
+        <img src="images/logos/WGRZ.png" alt="WGRZ" title="WGRZ" class="" />
+        <img src="images/logos/WHAS.png" alt="WHAS" title="WHAS" class="" />
+        <img src="images/logos/WJXX.png" alt="WJXX" title="WJXX" class="" />
+        <img src="images/logos/WKYC.png" alt="WKYC" title="WKYC" class="" />
+        <img src="images/logos/WLTX.png" alt="WLTX" title="WLTX" class="" />
+        <img src="images/logos/WMAZ.png" alt="WMAZ" title="WMAZ" class="" />
+        <img src="images/logos/WNEP.png" alt="WNEP" title="WNEP" class="" />
+        <img src="images/logos/WOI.png" alt="WOI" title="WOI" class="" />
+        <img src="images/logos/WPMT.png" alt="WPMT" title="WPMT" class="" />
+        <img src="images/logos/WQAD.png" alt="WQAD" title="WQAD" class="" />
+        <img src="images/logos/WTHR.png" alt="WTHR" title="WTHR" class="" />
+        <img src="images/logos/WTIC.png" alt="WTIC" title="WTIC" class="" />
+        <img src="images/logos/WTLV.png" alt="WTLV" title="WTLV" class="" />
+        <img src="images/logos/WTOL" alt="WTOL" title="WTOL" class="" />
+        <img src="images/logos/WTSP.png" alt="WTSP" title="WTSP" class="" />
+        <img src="images/logos/WUSA.png" alt="WUSA" title="WUSA" class="" />
+        <img src="images/logos/WVEC.png" alt="WVEC" title="WVEC" class="" />
+        <img src="images/logos/WWL.png" alt="WWL" title="WWL" class="" />
+        <img src="images/logos/WXIA.png" alt="WXIA" title="WXIA" class="" />
+        <img src="images/logos/WZDX.png" alt="WZDX" title="WZDX" class="" />
+        <img src="images/logos/WZZM.png" alt="WZZM" title="WZZM" class="" />
+      </div>
     </main>
-    <footer style="background-color: #fff; text-align: center; font-size: 20px; padding: 40px 0; font-weight: bold;">
-      Home | <a href="nbc/index.html">NBC</a> | <a href="abc/index.html">ABC</a> | <a href="cbs/index.html">CBS</a> | <a href="fox/index.html">FOX</a> | <a href="faqs.html">FAQ demo</a></footer>
-</body>
-
+    <footer
+      style="
+        background-color: #fff;
+        text-align: center;
+        font-size: 20px;
+        padding: 40px 0;
+        font-weight: bold;
+      "
+    >
+      Home | <a href="nbc/index.html">NBC</a> |
+      <a href="abc/index.html">ABC</a> | <a href="cbs/index.html">CBS</a> |
+      <a href="fox/index.html">FOX</a> | <a href="faqs.html">FAQ demo</a>
+    </footer>
+  </body>
 </html>
