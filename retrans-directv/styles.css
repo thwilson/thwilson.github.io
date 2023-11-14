@@ -129,7 +129,7 @@ a:link {
   font-weight: bold;
   line-height: 1.31;
   vertical-align: middle;
-  padding: 154px 0 0 0;
+  padding: 104px 0 0 0;
   max-width: 446px;
   margin: 0 auto;
   text-align: left;
@@ -207,9 +207,10 @@ a:link {
 
 .container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
 }
 
 .icon {
@@ -524,7 +525,6 @@ footer {
   }
 
   .social {
-    width: 49%;
     margin: 0 1px 0 0;
     padding: 38px 40px 53px 40px;
     background-color: #f5f5f5;
@@ -583,6 +583,12 @@ footer {
     width: 95%;
     padding: 0 20px;
   }
+
+  .watchcenter {
+    padding: 61px 16px 51px 20px;
+    width: 100%;
+  }
+
   .watchcenter h2 {
     font-size: 36px;
     padding-top: 60px;
@@ -672,7 +678,7 @@ footer {
   }
 
   .container {
-    display: block;
+    flex-wrap: wrap;
   }
 
   .social {
@@ -682,9 +688,6 @@ footer {
     margin-top: 10px;
   }
 
-  .watchcenter {
-    padding: 61px 16px 51px 20px;
-  }
   .watchcenter img {
     max-width: 100%;
     height: auto;
