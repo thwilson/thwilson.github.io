@@ -1,5 +1,6 @@
-body {
-  margin: 0 auto;
+html, body {
+  margin:0;
+  padding:0;
   background-color: #fff;
 }
 
@@ -73,11 +74,6 @@ body {
   font-style: normal;
 }
 
-body {
-  margin: 0 auto;
-  padding: 0px;
-}
-
 body,
 div,
 p {
@@ -89,120 +85,13 @@ a:link {
   text-decoration: none;
 }
 
-#poster {
-  display: block;
-  background: #000;
-  color: #fff;
-  font-weight: bold;
-  background: #000;
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
+.break {
+  display: none;
 }
 
-.posterimg {
-  width: 100%;
-  height: auto;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.posterleft {
-  width: 50%;
-  height: auto;
-  display: inline;
-  vertical-align: middle;
-  float: left;
-}
-
-.posterright {
-  width: 50%;
-  height: auto;
-  display: middle;
-  float: left;
-}
-
-.posterleft h1 {
-  font-size: 46px;
-  font-weight: bold;
-  line-height: 1.31;
-  vertical-align: middle;
-  padding: 104px 0 0 0;
-  max-width: 446px;
-  margin: 0 auto;
-  text-align: left;
-  float: right;
-}
-
-.stationmaydrop {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.67;
-  letter-spacing: normal;
-  color: #fff;
-  padding: 10px 0 55px 0;
-  margin: 0 auto;
-  text-align: left;
-  float: right;
-  max-width: 446px;
-}
-
-#learnmore {
-  color: #000;
-  background-color: #ff9409;
-}
-
-.takeaction,
-.questions {
-  background-color: #fff;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 80px;
-}
-
-.takeaction h2 {
-  margin: 0 auto;
-  font-size: 46px;
-  line-height: 1.09;
-  color: #000;
-  padding-top: 80px;
-}
-
-.takeaction p {
-  margin: 12px 4px 33px 13px;
-  font-size: 30px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-
-.social {
-  width: 49%;
-  margin: 0 4px 0 0;
-  background-color: #f5f5f5;
-}
-.social p {
-  margin: 0px;
-  font-weight: bold;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-
-.shareicon {
-  width: 153px;
-  height: auto;
-  border: none;
-  display: inline;
-  margin: 0 auto;
-  padding: 0px 0 53px 0;
+.callnumber {
+  font-size: 45px  !important; 
+  font-weight: bold  !important;
 }
 
 .container {
@@ -213,159 +102,29 @@ a:link {
   margin: auto;
 }
 
-.icon {
-  width: 47px;
-  height: auto;
-  border: none;
-  padding: 39px 0 17px 0;
-}
-
-.callprovider {
-  display: inline;
-  float: right;
-  width: 410px;
-  height: 271px;
-  margin: 0 auto;
-  background-color: #f5f5f5;
-}
-.callprovider p {
-  margin: 17px 0 23px;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-
-.actioncenter {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-.actioncenter h2 {
-  width: 253px;
-  height: 50px;
-  margin: 0 0 12px 0px;
-  padding-top: 80px;
-  font-size: 46px;
-  font-weight: bold;
-  line-height: 1.09;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-
-.actioncenter p {
-  margin: 12px 4px 5px 13px;
-  font-size: 24px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-
-.phone {
-  font-weight: bold;
-  color: #045ea8;
-  line-height: 1.38;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  font-size: 26px;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: center;
-}
-
-.phone a:link {
-  text-decoration: none;
-}
-
-.watchprograms {
-  background-color: #15539a;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.watchcenter {
-  padding: 0 200px 80px 200px;
-}
-
-.watchcenter h2 {
-  margin: 0 0 12px;
-  font-size: 46px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.09;
-  letter-spacing: normal;
-  text-align: center;
-  color: #fff;
-  padding: 80px 0 20px 0;
-}
-
-.watchcenter p {
-  padding: 12px 19px 40px 0;
-  margin: 0 auto;
-  font-size: 18px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: #fff;
-  max-width: 940px;
-  font-weight: normal;
-}
-.watchcenter img {
-  max-width: 900px;
-  height: auto;
-  text-align: center;
-  padding-bottom: 100px;
-}
-
-.questions {
+footer {
   background-color: #fff;
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  padding-top: 80px;
-}
-.qbox {
-  max-width: 976px;
   text-align: center;
-  display: block;
-  margin: 0 auto;
-  padding: 71px 128px 78px 108px;
-  background-color: #f5f5f5;
-}
-.questionstext {
-  display: inline;
-  float: left;
-  text-align: left;
-  width: 50%;
-  max-width: 356px;
-}
-.questionstext h2 {
-  font-size: 46px;
+  font-size: 20px;
   font-weight: bold;
+  margin: 25px;
 }
-.questionstext p {
-  font-size: 18px;
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+   -webkit-margin-before: 0px;
+   -webkit-margin-after: 0px;
 }
 
 .learnmore {
-  width: 50%;
+  width: 40%;
   display: inline;
   float: right;
 }
+
 #learnmorebox {
   font-weight: bold;
   text-align: center;
@@ -382,433 +141,215 @@ a:link {
   text-decoration: none;
 }
 
-.qRectangleBlue {
-  width: 8px;
-  height: 54px;
-  margin: 0 24px 0 0;
-  background-color: #045ea8;
-}
-
-footer {
-  background-color: #fff;
-  text-align: center;
-  font-size: 20px;
+#posterabc {
+  display: block;
+  height: 600px;
+  max-height: 600px;
+  background: #000;
+  color: #fff;
   font-weight: bold;
-  margin: 40px 0;
+  margin: 0 auto 20px auto;
+  padding: 0;
+  background: url(./images/abc-poster.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-#stationlogos {
+#postercbs {
+  display: block;
+  height: 600px;
+  max-height: 600px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 auto 20px auto;
+  padding: 0;
+  background: url(./images/cbs-poster.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#posternbc {
+  display: block;
+  height: 600px;
+  max-height: 600px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 auto 20px auto;
+  padding: 0;
+  background: url(./images/nbc-poster.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.questions {
+  background-color: #fff;
+  margin: 0 auto;
+  display: block;
   width: 100%;
-  padding: 0 240px;
 }
-
-#stationlogos h1 {
+.qbox {
+  max-width: 976px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+.questionstext {
+  display: inline;
+  float: left;
+  text-align: left;
+  width: 60%;
+}
+.questionstext h2 {
   font-size: 46px;
   font-weight: bold;
 }
-
-#stationlogos p {
+.questionstext p {
   font-size: 18px;
 }
 
-.stationimg {
-  width: 164px;
-  height: auto;
-  float: left;
-  display: inline;
-  border: solid 1px #d4d4d4;
-  margin: 17px;
-  color: #000;
+.takeaction,
+.questions {
+  background-color: #fff;
+  display: block;
   text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  padding-bottom: 2px;
+  margin: 0 auto;
 }
 
-.stationimg a {
+.takeaction h2 {
+  margin: 0 auto;
+  font-size: 46px;
+  line-height: 1.09;
   color: #000;
-  text-decoration: none;
+  padding-top: 40px;
 }
 
-.stationimg img {
-  width: 164px;
-  height: 75px;
-  border: none;
-  border-bottom: solid 1px #d4d4d4;
+.takeaction p {
+  margin: 20px;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
 }
 
-.filterbox {
-  width: 285px;
-  height: 51px;
-  padding: 19px 24px 15px;
-  background-color: #045ea8;
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 17px;
-  margin: 0 17px 12px 17px;
-  color: #fff;
-  display: none;
+.watchcenter h2 {
+  text-align: center;
 }
 
-.filterbox a {
-  color: #fff;
-}
-
-.filterbox img {
-  border: none;
-  float: right;
-  width: 18px;
-  height: auto;
-}
-
-/* Laptop 1440 */
-@media only screen and (max-width: 1440px) {
-  .posterleft h1 {
-    font-size: 46px;
-    font-weight: bold;
-    line-height: 1.31;
-    vertical-align: middle;
-    padding: 50px 0 0 0;
-    text-align: center;
-    max-width: 446px;
-    margin: 0 auto;
-    text-align: left;
-    float: right;
-  }
-}
-
-/* Laptop 1024 */
+/* NEST HUB DISPLAY ################################*/
 @media only screen and (max-width: 1024px) {
-  .posterleft h1 {
-    padding: 50px 0 0 0;
-  }
-  .watchcenter h2 {
-    width: 95%;
-  }
-}
-
-/* Tablet 768 */
-@media only screen and (max-width: 768px) {
-  .posterleft h1 {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1.31;
-    vertical-align: middle;
-    padding: 40px 0 0 30px;
-    max-width: 384px;
-    margin: 0 auto;
-    text-align: left;
-    float: none;
-  }
-  .watchcenter img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-  }
-
-  #phone {
-    font-weight: bold;
-    color: #045ea8;
-    line-height: 1.38;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    font-size: 26px;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
-    text-align: center;
-  }
-
-  #phone a:link {
-    text-decoration: none;
-  }
-
-  .social {
-    margin: 0 1px 0 0;
-    padding: 38px 40px 53px 40px;
-    background-color: #f5f5f5;
-  }
-
-  .social p {
-    margin: 17px 0 23px;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .shareicon {
-    width: 103px;
-    height: auto;
-    border: none;
-    display: inline;
-    padding: 0 1%;
-  }
-
-  .callprovider {
+  .learnmore {
     width: 49%;
-    margin: 0 0 0 1px;
-    padding: 38px 40px 53px 40px;
-    background-color: #f5f5f5;
-  }
-  .callprovider p {
-    margin: 17px 0 23px;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
   }
 
-  .takeaction,
-  .questions {
-    background-color: #fff;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 40px;
-  }
-
-  .takeaction h2 {
-    margin: 0 281px 12px 290px;
-    font-size: 36px;
-    padding-top: 60px;
-  }
-
-  .takeaction p {
-    width: 95%;
-    padding: 0 20px;
-  }
-
-  .watchcenter {
-    padding: 61px 16px 51px 20px;
-    width: 100%;
-  }
-
-  .watchcenter h2 {
-    font-size: 36px;
-    padding-top: 60px;
-    width: 95%;
-  }
-
-  .watchcenter p {
-    padding: 0 20px;
+  .qbox {
     max-width: 100%;
-    width: 100%;
-  }
-
-  .questions {
-    padding-top: 0px;
   }
 
   .questionstext {
-    display: inline;
-    float: left;
-    text-align: left;
-    max-width: 50%;
-    width: 50%;
+    width: 49%;
   }
-  .questionstext h2 {
-    font-size: 36px;
-    font-weight: bold;
-  }
-  .qbox {
-    max-width: 100%;
-    width: 100%;
-    padding: 0px 60px;
-  }
-  #learnmorebox {
-    margin: 60px auto;
-  }
-  .stationmaydrop {
-    margin: 44px 0 0;
-    padding: 0 0 55px 0;
+  .questionstext p {
+    font-size: 24px;
   }
 }
 
-/* MOBILE DISPLAY */
-@media only screen and (max-width: 425px) {
-  .posterleft {
-    width: 100%;
-    height: auto;
-    display: block;
-    float: none;
-  }
 
-  .posterright {
-    width: 100%;
-    height: auto;
-    display: block;
-    float: none;
-  }
-
-  .posterleft h1 {
-    padding: 0;
-    text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: left;
-    float: none;
-    margin: 32px 51px 32px 44px;
-    font-size: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.31;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
-  }
-
-  .callprovider {
-    display: block;
-    float: none;
-    width: 100%;
-    height: auto;
-    margin: 4px 4px 0 0;
-    padding: 38px 72px 52px 73px;
-  }
-
-  .actioncenter {
+/* MOBILE DISPLAY ################################*/
+@media only screen and (max-width: 800px) {
+  .break {
     display: block;
   }
-
+  .callnumber {
+    font-size: 35px !important; 
+    font-weight: bold !important;
+  }
+  
   .container {
     flex-wrap: wrap;
   }
 
-  .social {
-    padding: 39px 20px 40px 20px;
-    width: 100%;
-    display: block;
-    margin-top: 10px;
+  footer {
+    margin: 15px 5px;
+  }
+  
+  h1 {
+    font-size: 40px;
   }
 
-  .watchcenter img {
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-    padding-bottom: 0px;
-  }
-  .watchcenter h2 {
+  .learnmore {
     width: 100%;
-    height: auto;
-    margin: 0 0 12px;
-    font-size: 32px;
+    display: block;
+    float: none;
+  }
+
+  #learnmorebox {
+    margin: 0 auto;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.19;
-    letter-spacing: normal;
     text-align: center;
-    color: #fff;
-    padding-top: 0px;
+    font-size: 18px;
+    width: 250px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 19px 14px 15px 13px;
+    background-color: #ff9409;
   }
-  .watchcenter p {
-    width: 100%;
-    height: auto;
-    margin: 12px 0 40px;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
+
+  #posterabc {
+    max-height: 200px;
+    background: url(./images/abc-poster.jpg) no-repeat; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
   }
+
+  #postercbs {
+    max-height: 200px;
+    background: url(./images/cbs-poster.jpg) no-repeat; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+  }
+
+  #posternbc {
+    max-height: 200px;
+    background: url(./images/nbc-poster.jpg) no-repeat; 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+  }
+
   .qbox {
-    max-width: 100%;
     text-align: center;
     display: block;
     width: 100%;
-    height: 259px;
-    padding: 32px 0px 0px 0px;
+    height: auto;
     background-color: #f5f5f5;
   }
 
-  .questionstext {
-    display: block;
-    float: none;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .takeaction h2 {
-    margin: 38px 0px 0px 0px;
-    font-size: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.19;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .takeaction p {
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  .social p {
-    width: 100%;
-    height: auto;
-    margin: 20px 4px;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.3;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  .callprovider {
-    padding: 39px 20px 52px 20px;
-    margin: 0 auto;
-    height: auto;
-  }
-  .callprovider p {
-    width: 100%;
-    height: auto;
-    margin: 20px 4px 0 4px;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.3;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  .takeaction,
-  .questions {
-    padding-bottom: 0px;
-  }
-  .takeaction h2 {
-    margin: 0 38px 0 12px;
-    font-size: 38px;
-    padding-top: 60px;
-  }
-  .icon {
-    padding: 0px;
-  }
   .questions {
     padding: 0;
     margin: 0 auto;
     width: 100%;
-    height: 360px;
+    height: auto;
   }
+
   .questionstext {
     display: block;
     float: none;
@@ -816,6 +357,7 @@ footer {
     max-width: 100%;
     width: 100%;
   }
+
   .questionstext h2 {
     width: 90%;
     font-size: 32px;
@@ -829,51 +371,28 @@ footer {
     padding: 0 20px;
   }
   .questionstext p {
-    width: 100%;
-    height: auto;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .takeaction h2 {
+    font-size: 32px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.5;
+    line-height: 1.19;
     letter-spacing: normal;
     text-align: center;
     color: #000;
-    padding: 0 20px;
-  }
-  .phone {
-    margin: 8px auto 0 auto;
-  }
-  .stationmaydrop {
-    margin: 44px 0 0;
-    padding: 0 0 26px 0;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
   }
 
-  .learnmore {
-    width: 100%;
-    display: block;
-    float: none;
+  .takeaction p {
+    font-size: 24px;
   }
-  #learnmorebox {
-    margin: 0 auto;
-    font-weight: bold;
-    text-align: center;
-    font-size: 18px;
-    width: 250px;
-    height: 60px;
-    margin: 0 auto;
-    padding: 19px 14px 15px 13px;
-    background-color: #ff9409;
+
+  .takeaction,
+  .questions {
+    padding-bottom: 0px;
   }
-  footer {
-    padding-top: 45px;
-  }
+
 }
