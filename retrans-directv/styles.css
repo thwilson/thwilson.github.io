@@ -94,6 +94,43 @@ a:link {
   font-weight: bold  !important;
 }
 
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #315ea3;
+  margin: 0 auto;
+
+}
+
+.choicesblock {
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 1.5;
+}
+
+.choicesblock a {
+  color: #fff;
+}
+
+.choicesblock a:hover {
+  text-decoration: underline;
+}
+
+.choicesblock ul {
+  text-align: left;
+}
+
+.choicesblock li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
 .container {
   display: flex;
   justify-content: center;
@@ -105,13 +142,12 @@ a:link {
 footer {
   background-color: #fff;
   text-align: center;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 12px;
   margin: 25px;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
@@ -119,20 +155,22 @@ h1 {
    -webkit-margin-after: 0px;
 }
 
+h3 {
+  text-align: center;
+}
+
 .learnmore {
   width: 40%;
-  display: inline;
-  float: right;
+  height: auto;
 }
 
 #learnmorebox {
   font-weight: bold;
-  text-align: center;
   font-size: 18px;
   width: 250px;
   height: 60px;
-  margin: 60px 0 22px 133px;
-  padding: 19px 14px 15px 13px;
+  margin: 0;
+  padding: 20px;
   background-color: #ff9409;
 }
 
@@ -141,52 +179,33 @@ h1 {
   text-decoration: none;
 }
 
-#posterabc {
+.poster {
   display: block;
-  height: 600px;
-  max-height: 600px;
+  height: 300px;
+  max-height: 300px;
   background: #000;
-  color: #fff;
-  font-weight: bold;
-  margin: 0 auto 20px auto;
+  margin: 0 0 30px 0;
   padding: 0;
-  background: url(./images/abc-poster.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
-#postercbs {
-  display: block;
-  height: 600px;
-  max-height: 600px;
-  background: #000;
-  color: #fff;
-  font-weight: bold;
-  margin: 0 auto 20px auto;
-  padding: 0;
-  background: url(./images/cbs-poster.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.poster img {
+  text-align: center;
+  height: auto;
+  width: 100%;
+  max-width: 673px;
+  max-height: 300px;
+  border: none;
 }
 
-#posternbc {
-  display: block;
-  height: 600px;
-  max-height: 600px;
-  background: #000;
-  color: #fff;
-  font-weight: bold;
-  margin: 0 auto 20px auto;
+.qbox {
+  display: flex;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
   padding: 0;
-  background: url(./images/nbc-poster.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #f5f5f5;
+  align-items: center;
+  justify-content: center;
 }
 
 .questions {
@@ -195,23 +214,17 @@ h1 {
   display: block;
   width: 100%;
 }
-.qbox {
-  max-width: 976px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  padding: 10px;
-  background-color: #f5f5f5;
-}
+
 .questionstext {
-  display: inline;
-  float: left;
   text-align: left;
   width: 60%;
+  padding-left: 40px;
+  padding-right: 10px;
 }
 .questionstext h2 {
-  font-size: 46px;
+  font-size: 25px;
   font-weight: bold;
+  text-align: left;
 }
 .questionstext p {
   font-size: 18px;
@@ -227,15 +240,15 @@ h1 {
 
 .takeaction h2 {
   margin: 0 auto;
-  font-size: 46px;
+  font-size: 25px;
   line-height: 1.09;
   color: #000;
   padding-top: 40px;
 }
 
 .takeaction p {
-  margin: 20px;
-  font-size: 30px;
+  margin: 10px 20px 20px 20px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -247,29 +260,21 @@ h1 {
 
 .watchcenter h2 {
   text-align: center;
+
 }
+
 
 /* NEST HUB DISPLAY ################################*/
 @media only screen and (max-width: 1024px) {
-  .learnmore {
-    width: 49%;
-  }
 
-  .qbox {
-    max-width: 100%;
-  }
-
-  .questionstext {
-    width: 49%;
-  }
   .questionstext p {
-    font-size: 24px;
+    padding-right: 10px;
   }
 }
 
 
 /* MOBILE DISPLAY ################################*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .break {
     display: block;
   }
@@ -293,7 +298,6 @@ h1 {
   .learnmore {
     width: 100%;
     display: block;
-    float: none;
   }
 
   #learnmorebox {
@@ -304,35 +308,14 @@ h1 {
     width: 250px;
     height: 60px;
     margin: 0 auto;
-    padding: 19px 14px 15px 13px;
+    padding: 20px;
     background-color: #ff9409;
   }
 
-  #posterabc {
-    max-height: 200px;
-    background: url(./images/abc-poster.jpg) no-repeat; 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-  }
+  .poster {
+    height: auto;
+    max-height: auto;
 
-  #postercbs {
-    max-height: 200px;
-    background: url(./images/cbs-poster.jpg) no-repeat; 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-  }
-
-  #posternbc {
-    max-height: 200px;
-    background: url(./images/nbc-poster.jpg) no-repeat; 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
   }
 
   .qbox {
@@ -340,6 +323,7 @@ h1 {
     display: block;
     width: 100%;
     height: auto;
+    padding: 20px;
     background-color: #f5f5f5;
   }
 
@@ -356,10 +340,11 @@ h1 {
     text-align: center;
     max-width: 100%;
     width: 100%;
-  }
+    padding-left: 0px;
+    }
 
   .questionstext h2 {
-    width: 90%;
+    width: 100%;
     font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
@@ -368,7 +353,8 @@ h1 {
     letter-spacing: normal;
     color: #000;
     text-align: center;
-    padding: 0 20px;
+    padding: 0px;
+    margin: 0;
   }
   .questionstext p {
     font-size: 24px;
@@ -376,7 +362,6 @@ h1 {
   }
 
   .takeaction h2 {
-    font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -388,11 +373,16 @@ h1 {
 
   .takeaction p {
     font-size: 24px;
+    margin: 10px 0;
   }
 
   .takeaction,
   .questions {
     padding-bottom: 0px;
+  }
+
+  .watchcenter h2 {
+    margin: 20px 10px;
   }
 
 }
