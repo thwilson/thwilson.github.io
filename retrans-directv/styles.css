@@ -198,7 +198,7 @@ h3 {
   margin: 0 auto;
   font-size: 35px;
   line-height: 1.50;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .orangebox a:hover {
@@ -296,10 +296,6 @@ h3 {
 
 /* NEST HUB DISPLAY ################################*/
 @media only screen and (max-width: 1024px) {
-
-  .orangebox h2 {
-    text-align: center;
-  }
 
   .questionstext p {
     padding-right: 10px;
