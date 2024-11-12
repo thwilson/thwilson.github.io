@@ -176,6 +176,11 @@ main img {
     height: auto;
 }
 
+.msgtext {
+    font-size: 18px !important;
+    text-align: center;
+}
+
 .nostationrow {
     background-color: black;
     color: white;
