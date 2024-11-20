@@ -232,9 +232,24 @@ main img {
     border: none;
 }
 
+.reclaimcolor {
+    color: #d77935;
+}
+
+.reclaimhash {
+    font-weight: 100 !important;
+    font-size: 36px !important;
+    padding-top: 25px;
+
+}
+
 .reclaimrow {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: .9;
+    
 }
 
 .reclaimrow img {
