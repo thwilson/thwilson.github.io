@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    rel="icon"
+    href="https://www.tegna.com/wp-content/uploads/2021/08/cropped-T_favicon_512x512-32x32-1.png"
+    sizes="192x192"
+  />
+  <title>KeepMyLocalTV.com - TEGNA</title>
+
+  <script>
+    (() => {
+      window.onload = function () {
+        setupHandlers();
+      };
+
+      let setupHandlers = function () {
+        let questions = document.getElementsByClassName("questionbox");
+        [...questions].forEach((question) => {
+          question.addEventListener("click", function () {
+            let answer = this.nextElementSibling.className.includes("answer")
+              ? this.nextElementSibling
+              : null;
+            let arrow = this.getElementsByClassName("arrow")[0];
+            if (answer) {
+              if (answer.className.includes("answer_open_true")) {
+                answer.classList.remove("answer_open_true");
+                arrow.classList.remove("arrow_flipped_true");
+              } else {
+                answer.className += " answer_open_true";
+                arrow.className += " arrow_flipped_true";
+              }
+            }
+          });
+        });
+      };
+    })();
+  </script>
+</head>
+<body>
+    <main>
+        <section class="fbrow"><img src="images/godark-hero.jpg" alt="football player"/></section>
+
+        <section class="reclaimrow">
+          KEEP MY LOCAL TV<br/>
+              <span class="reclaimcolor">DON'T MISS A MINUTE</span>
+              <div class="reclaimhash">#ReclaimYourGames</div>
+          
+          </section>
+
+        <section class="nostationrow">
+            <p class="switchtext">SWITCH PROVIDERS NOW!</p>
+
+            <!-- STATION LOGO -->
+            <p> <img src="https://www.kcentv.com/assets/shared-images/logos/kcen.png" alt="KCEN" title="KCEN" class="stationimg" /> is available on other videos services in the area including:</p>
+
+            <!-- PROVIDERS -->
+
+            <p><a href="https://www.directv.com/" target="_blank"><img src="images/logo-directv.jpg" alt="DirecTV" title="DirecTV" /></a><br>
+            <a href="tel:18005315000">1-800-531-5000</a></p>
+
+            <p><a href="https://www.hulu.com/live-tv" target="_blank"><img src="images/logo-hulu.jpg" alt="Hulu" title="Hulu" /><br>hulu.com/live-tv</a></p>
+
+            <p><a href="https://tv.youtube.com/" target="_blank"><img src="images/logo-youtubetv.jpg" alt="YoutubeTV" title="Youtube TV" /><br>tv.youtube.com</a></p>
+
+        </section>
+        <section class="faqrow">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="questionbox">
+              <div class="arrow"><img src="images/arrow-down.png" /></div>
+              <h2 class="question">Q: How can Spectrum just cut off access to a local broadcast station for its customers when local broadcast is so important for communities?</h2>
+            </div>
+            <div class="answer">
+              <p>A. Unfortunately, Spectrum has refused to reach a fair, market-based agreement to keep your access to local programming and our local news. We are committed to reaching fair deals with every pay-TV provider because that's how we are able to deliver the absolute best local news and weather, sports and entertainment, and to be there when our neighbors need us. </p>
+
+              <p>We hope Spectrum appreciates how important access to our station is for its customers and preserves your access by coming to a fair and market-based agreement.</p>
+
+              <p>To express your concern to Spectrum about getting your favorite local television programming, call Spectrum at <a href="tel:18332676094">(833) 267-6094</a>.</p>
+
+            </div>
+    
+            
+            <div class="questionbox">
+              <div class="arrow"><img src="images/arrow-down.png" /></div>
+              <h2 class="question">Q: How can I watch my favorite sports, news and entertainment programs?</h2>
+            </div>
+            <div class="answer">
+              <p>A: You have choices. Our station and local news programming are available on other service providers in our community. Visit the “Switch Now” section of this website to learn more.  </p>
+            </div>
+
+            <div class="questionbox">
+              <div class="arrow"><img src="images/arrow-down.png" /></div>
+              <h2 class="question">Q: Why is Spectrum refusing to reach an agreement to carry my station?</h2>
+            </div>
+            <div class="answer">
+              <p>A: We cannot speak for Spectrum. But here is what you should know: We are committed to reaching fair, market-based agreements with all the video service providers in our area. We've successfully reached hundreds of multi-year deals with distributors across the country over the past several years, including other major cable companies like Comcast and Cox. Unfortunately, Spectrum has refused to reach a fair, market-based agreement to keep its customers' access to local programming.</p>
+            </div>
+
+            <div class="questionbox">
+              <div class="arrow"><img src="images/arrow-down.png" /></div>
+              <h2 class="question">Q: I have heard Spectrum say that they want to carry local stations, but programmers simply won't let them carry the station anymore. Is that true?</h2>
+            </div>
+            <div class="answer">
+              <p>A: No. This is a misleading statement. We are committed to reaching fair, market-based agreements with all the video service providers in our area. We've successfully reached hundreds of multi-year deals with distributors across the country over the past several years, including other major cable companies like Comcast and Cox. Unfortunately, Spectrum has refused to reach a fair, market-based agreement, denying its customers access to local programming.</p>
+            </div>
+
+            <div class="questionbox">
+              <div class="arrow"><img src="images/arrow-down.png" /></div>
+              <h2 class="question">Q: Why should Spectrum have to pay to carry station programming when the signal is free over-the-air?</h2>
+            </div>
+            <div class="answer">
+              <p>A: Our signal is free to viewers, not to Spectrum. Broadcast stations like ours are a big part of Spectrum's value to viewers and all we ask for is fair compensation for that value - after all, we are working harder and investing more in our programming, especially our local news, than ever before.</p>
+            </div>
+
+            <div class="questionbox">
+              <div class="arrow"><img src="images/arrow-down.png" /></div>
+              <h2 class="question">Q: I have heard Spectrum say that programmers are demanding big fee increases, which would lead to higher bills. Is that true?</h2>
+            </div>
+            <div class="answer">
+              <p>A: No. That is an example of Spectrum misleading Spectrum customers. We have reached deals with hundreds of pay-TV providers - all of which felt they were able to reach a fair deal with us while continuing to offer value to their subscribers. </p>
+            </div>
+
+            <div class="questionbox">
+              <div class="arrow"><img src="images/arrow-down.png" /></div>
+              <h2 class="question">Q: Isn't it unfair that I lost access to a channel that I'm paying for just because two companies can't reach a deal?</h2>
+            </div>
+            <div class="answer">
+              <p>A: We agree - it is unfair. After all, you pay your bill to Spectrum every month. You deserve the full set of channels you are paying for and you shouldn't miss one minute of the programming you love - consider switching to one of the many providers that continue to carry our station.</p>
+            </div>
+
+        </section>
+        <footer>©TEGNA Inc. 2024. All Rights Reserved.</footer>
+    </main>
+
+    <!-- PIXEL -->
+    <script async referrerpolicy="no-referrer-when-downgrade" src='https://tag.simpli.fi/sifitag/7604dc40-af64-483c-a66d-9a7eaa890b0d'></script>
+</body>
+</html>
