@@ -56,7 +56,7 @@ p {
 .faqrow {
     margin: 0 auto;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .faqrow p {
@@ -194,7 +194,7 @@ main img {
     color: white;
     margin: 0 auto;
     text-align: center;
-    padding: 25px;
+    padding: 10px;
     line-height: 1.2;
     margin: 0 auto;
     display: block;
@@ -242,7 +242,41 @@ main img {
 .providerbox {
     float: left; 
     width: 30%;
+    margin: 0;
+    padding: 10px;
 
+}
+
+.providerlogo {
+    margin: 10px 0;
+    padding; 0;
+}
+
+.questionbox {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin-bottom: 2px;
+    padding: 0 50px 0 24px;
+    border-left: 8px solid #ee6f22;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    line-height: 1.5;
+    cursor: pointer;
+    text-align: left;
+}
+
+.questionbox:first-of-type {
+    margin-top: 20px;
+}
+
+.question {
+    padding: 10px 0;
+    margin: 0;
+    user-select: none;
+    pointer-events: none;
 }
 
 .reclaimcolor {
@@ -285,39 +319,13 @@ main img {
    color: #ee6f22;
    font-weight: 700;
    font-size: 40px !important;
-   margin: 30px auto;
-}
-
-.questionbox {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin-bottom: 2px;
-    padding: 0 50px 0 24px;
-    border-left: 8px solid #ee6f22;
-    background-color: #f5f5f5;
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-    line-height: 1.5;
-    cursor: pointer;
-    text-align: left;
-}
-
-.questionbox:first-of-type {
-    margin-top: 30px;
-}
-
-.question {
-    padding: 10px 0;
-    margin: 0;
-    user-select: none;
-    pointer-events: none;
+   margin: 20px auto;
 }
 
 .textbold {
-    font-weight: 700;
+    font-weight: normal;
     line-height: 1.2;
+    margin: 20px;
 }
 
 .textbold a:link {
