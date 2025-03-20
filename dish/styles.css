@@ -196,10 +196,14 @@ main img {
     text-align: center;
     padding: 25px;
     line-height: 1.2;
-}
-
-.nostationrow {
     margin: 0 auto;
+    display: block;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 .nostationrow img {
@@ -234,6 +238,11 @@ main img {
     width: 100%;
     height: 100%;
     border: none;
+}
+.providerbox {
+    float: left; 
+    width: 30%;
+
 }
 
 .reclaimcolor {
@@ -325,4 +334,35 @@ main img {
     overflow: hidden;
     padding-top: 56.25%;
     background-color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    .nostationrow img {
+        width: 70px;
+        height: auto;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .nostationrow p {
+        font-size: 18px;
+    }
+
+    .providerbox {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .providerlogo {
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+
+    .switchtext {
+        margin: 0;
+    }
+
+    .textbold {
+        padding: 0 10px;
+    }
 }
