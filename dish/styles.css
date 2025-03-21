@@ -193,7 +193,7 @@ main img {
     background-color: black;
     color: white;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     line-height: 1.2;
     margin: 0 auto;
@@ -211,6 +211,7 @@ main img {
     width: 100%;
     max-width: 150px;
     height: auto;
+    margin-right: 10px;
 }
 
 .nostationrow p a {
@@ -241,8 +242,9 @@ main img {
 }
 .providerbox {
     float: left; 
+    display: inline;
     width: 30%;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 10px;
 
 }
@@ -310,9 +312,10 @@ main img {
 .stationimg {
     display: inline;
     float: left;
-    width: 164px;
+    width: 100%;
     height: auto;
-    max-width: 164px;
+    max-width: 120px;
+    padding-right: 2px;
 }
 
 .switchtext {
@@ -320,6 +323,7 @@ main img {
    font-weight: 700;
    font-size: 40px !important;
    margin: 20px auto;
+   text-align: center;
 }
 
 .textbold {
