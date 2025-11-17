@@ -61,7 +61,7 @@ p {
   font-weight: 700;
   font-style: normal;
   margin: 5px 10px 10px 10px;
-  
+  width: 240px;
   }
 
   .button:hover {
@@ -86,8 +86,8 @@ p {
   font-weight: 600;
   font-style: normal;
   margin: 5px 10px 10px 10px;
-  width: 100%;
-  max-width: 400px;
+  width: 240px;
+  height: 104px;
   text-wrap: wrap;
   display: inline-flex;
   align-items: stretch;
@@ -239,7 +239,7 @@ main img {
 }
 
 .nostationrow {
-    background-color: black;
+    background-color: #000947;
     color: white;
     margin: 0 auto;
     padding: 10px;
