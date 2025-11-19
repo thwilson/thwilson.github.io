@@ -69,6 +69,30 @@ p {
     color: #0000ff;
   }
 
+.buttondark {
+    backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: #000947;
+  border-radius: 10px;
+  border: 2px solid #000947;
+  border-width: 2px 2px 2px 2px;
+  padding: 10px 25px 10px 25px;
+    color: #fff;
+  font-size: 20px;
+  font-family: proximanova;
+  font-weight: 700;
+  font-style: normal;
+  margin: 5px 10px 10px 10px;
+  width: 240px;
+  }
+
+.buttondark:hover {
+    color: #f36f21;
+  }
+
  .buttonknow {
   backface-visibility: hidden;
   position: relative;
@@ -267,7 +291,7 @@ main img {
 
 .nostationrow a:link {
     text-decoration: none ;
-    color: white;
+    color: white !important;
 }
 
 .nostationrow a:hover {
@@ -277,6 +301,33 @@ main img {
 
 .nostationrow p {
     font-size: 30px;
+}
+
+.nostationrowdark {
+    background-color:#fff; ;
+    color: #000;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 1.2;
+    margin: 0 auto;
+    display: block;
+    flex-wrap: wrap;
+    overflow: auto;
+    text-align: center;
+}
+
+.nostationrow p a {
+    color: #000;
+}
+
+.nostationrowdark a:hover {
+    text-decoration: underline ;
+    color: #000;
+}
+
+.nostationrow a:link {
+    text-decoration: none ;
+    color: #000;
 }
 
 .nostationrowbuttons {
@@ -403,6 +454,12 @@ main img {
     font-size: 26px;
     line-height: 1.2;
     margin: 20px;
+}
+
+.textboldswitch {
+    color: #f36f21 !important;
+    font-weight: 700;
+    font-size: 36px;
 }
 
 .video-container {
