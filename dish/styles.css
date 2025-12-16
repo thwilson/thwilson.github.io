@@ -1,0 +1,380 @@
+.arrow {
+    position: absolute;
+    right: 20px;
+    transition: 0.4s;
+}
+
+.arrow_flipped_true {
+    transform: rotate(-180deg);
+}
+
+.answer {
+    font-family: proximanova !important;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.67;
+    padding-left: 32px;
+    opacity: 0;
+    max-height: 0px;
+    overflow: hidden;
+    transition: opacity ease 0.4s, max-height ease 0.2s;
+    padding: 0 32px;
+    text-align: left;
+}
+
+.answer p:last-child {
+    padding-bottom: 16px;
+}
+
+.answer_open_true {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body,
+div,
+p {
+    box-sizing: border-box;
+    font-family: proximanova !important;
+    font-size: 18px;
+}
+
+.center {
+    text-align: center;
+}
+
+.companytext {
+    color: #ee6f22;
+    font-weight: bold;
+}
+
+.faqrow {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.faqrow p {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 1.5;
+}
+
+.fbrow {
+    background-color: black;
+    margin: 0 auto;
+}
+
+.fbrow img {
+    width: 100%;
+    height: auto;
+}
+
+.filterbox {
+    width: 285px;
+    height: 51px;
+    padding: 19px 24px 15px;
+    background-color: #045ea8;
+    color: #fff;
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-black-webfont.eot);
+    src: url(fonts/proximanova-black-webfont.woff2) format("woff2"),
+        url(fonts/proximanova-black-webfont.woff) format("woff"),
+        url(fonts/proximanova-black-webfont.ttf) format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-extrabold-webfont.eot);
+    src: url(fonts/proximanova-extrabold-webfont.woff2) format("woff2"),
+        url(fonts/proximanova-extrabold-webfont.woff) format("woff"),
+        url(fonts/proximanova-extrabold-webfont.ttf) format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-bold-webfont.eot);
+    src: url(fonts/proximanova-bold-webfont.woff2) format("woff2"),
+        url(fonts/proximanova-bold-webfont.woff) format("woff"),
+        url(fonts/proximanova-bold-webfont.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-boldit-webfont.eot);
+    src: url(fonts/proximanova-boldit-webfont.woff2) format("woff2"),
+        url(fonts/proximanova-boldit-webfont.woff) format("woff"),
+        url(fonts/proximanova-boldit-webfont.ttf) format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-semibold-webfont.eot);
+    src: url(fonts/proximanova-semibold-webfont.woff2) format("woff2"),
+        url(fonts/proximanova-semibold-webfont.woff) format("woff"),
+        url(fonts/proximanova-semibold-webfont.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-regularit-webfont.eot);
+    src: url(fonts/proximanova-regularit-webfont.woff2) format("woff2"),
+        url(fonts/proximanova-regularit-webfont.woff) format("woff"),
+        url(fonts/proximanova-regularit-webfont.ttf) format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(fonts/proximanova-regular-webfont.eot);
+    src: url(fonts/proximanova-regular-webfont.woff2) format("woff2"),
+        url(fonts/proximanova-regular-webfont.woff) format("woff"),
+        url(fonts/proximanova-regular-webfont.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+h1 {
+    width: 100%;
+    font-size: 46px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+h2 {
+    max-width: 900px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+main {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+.msgtext {
+    font-size: 18px !important;
+    text-align: center;
+}
+
+.nostationrow {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+    line-height: 1.2;
+    margin: 0 auto;
+    display: block;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.nostationrow img {
+    border: none;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nostationrow p a {
+    color: white;
+}
+
+.nostationrow a:link {
+    text-decoration: none ;
+    color: white;
+}
+
+.nostationrow a:hover {
+    text-decoration: underline ;
+    color: white;
+}
+
+.nostationrow p {
+    font-size: 30px;
+}
+
+.player-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.providerbox {
+    float: left; 
+    display: inline;
+    width: 30%;
+    margin: 0 0 10px 0;
+    padding: 10px;
+
+}
+
+.providerlogo {
+    margin: 10px 0;
+    padding; 0;
+}
+
+.questionbox {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin-bottom: 2px;
+    padding: 0 50px 0 24px;
+    border-left: 8px solid #ee6f22;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    line-height: 1.5;
+    cursor: pointer;
+    text-align: left;
+}
+
+.questionbox:first-of-type {
+    margin-top: 20px;
+}
+
+.question {
+    padding: 10px 0;
+    margin: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+.reclaimcolor {
+    color: #ee6f22;
+    font-size: 75px;
+}
+
+.reclaimhash {
+    font-weight: 100 !important;
+    font-size: 36px !important;
+    padding-top: 25px;
+
+}
+
+.reclaimrow {
+    text-align: center;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: .9;
+}
+
+.reclaimrow img {
+    width: 100%;
+    height: auto;
+}
+
+.stationrow {
+    display: block;
+}
+
+.stationimg {
+    display: inline;
+    float: left;
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    padding-right: 2px;
+}
+
+.switchtext {
+   color: #ee6f22;
+   font-weight: 700;
+   font-size: 40px !important;
+   margin: 20px auto;
+   text-align: center;
+}
+
+.textbold {
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 20px;
+}
+
+.textbold a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.textbold a:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    background-color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    .nostationrow img {
+        width: 70px;
+        height: auto;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .nostationrow p {
+        font-size: 18px;
+    }
+
+    .providerbox {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .providerlogo {
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+
+    .switchtext {
+        margin: 0;
+    }
+
+    .textbold {
+        padding: 0 10px;
+    }
+}
