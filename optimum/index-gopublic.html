@@ -1,0 +1,150 @@
+<!-- for review -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    rel="icon"
+    href="https://www.tegna.com/wp-content/uploads/2021/08/cropped-T_favicon_512x512-32x32-1.png"
+    sizes="192x192"
+  />
+  <title>KeepMyLocalTV.com - TEGNA</title>
+
+  <script>
+    (() => {
+      window.onload = function () {
+        setupHandlers();
+      };
+
+      let setupHandlers = function () {
+        let questions = document.getElementsByClassName("questionbox");
+        [...questions].forEach((question) => {
+          question.addEventListener("click", function () {
+            let answer = this.nextElementSibling.className.includes("answer")
+              ? this.nextElementSibling
+              : null;
+            let arrow = this.getElementsByClassName("arrow")[0];
+            if (answer) {
+              if (answer.className.includes("answer_open_true")) {
+                answer.classList.remove("answer_open_true");
+                arrow.classList.remove("arrow_flipped_true");
+              } else {
+                answer.className += " answer_open_true";
+                arrow.className += " arrow_flipped_true";
+              }
+            }
+          });
+        });
+      };
+    })();
+  </script>
+
+  
+</head>
+<body>
+    <main>
+        <section class="fbrow"><img src="images/optimum-banner.jpg" alt="Optimum won't change. You can." title="Optimum won't change. You can."/></section>
+        <p class="textbold">
+         For the third time in 12 months, Optimum is threatening to block customers from the live sports, local news, and weather updates they pay for. </p>
+        <h2 class="textbold" style="font-weight: bold; text-align: center;">You don't have to be one of those customers.</h2>
+
+    </section>
+    <section class="nostationrow">
+        <p class="textbold">Call Optimum Now to Tell Them to Keep Your Station on on the Air. </p>
+        <div class="nostationrowbuttons">
+          <a href="tel:18776949474 " onclick="phone();"><div class="button">Call 1-877-694-9474</div></a>
+          <a href="https://www.facebook.com/Optimum/" target="_blank"><div class="button">Post to Facebook</div></a>
+          <a href="https://twitter.com/intent/tweet?via=optimum&text=Don%27t%20drop%20my%20local%20news%20and%20favorite%20shows!%20It%20is%20unfair%20to%20take%20away%20my%20programming.%20I%20pay%20@Optimum%20so%20I%20can%20get%20the%20channels%20I%20want.%20If%20I%20can%27t%20watch%20what%20I%20pay%20for,%20I%20will%20go%20elsewhere.%20@OptimumSupport&hashtags=KEEPMYLOCALTV" target="_blank"><div class="button">Post to X</div></a>
+        </div>   
+
+    </section>
+
+
+        <section class="faqrow">
+
+          <p style="font-weight: bold;">You don't have to miss a minute of your local news, weather or sports updates in the meantime. Download our station's Plus App to stream our local programming 24/7.</p>
+
+         
+        
+            <h2>Frequently Asked Questions</h2>
+            <p>Understand why Optimum is blocking access to your local TV station.</p>
+
+            <div class="questionbox">
+                <div class="arrow"><img src="images/arrow-down.png" /></div>
+                <h2 class="question">Q. Why is Optimum threatening to block my local station? </h2>
+            </div>
+            <div class="answer">
+                <p>A: Optimum is threatening to block our station because they refuse to reach a fair agreement to keep us on their service. When they sell you their service, they stress how valuable live sports, network shows, and local news and weather are. Yet when it is their turn to pay for that same programming, they refuse to acknowledge its value. </p>
+
+                <p>We are asking Optimum to pay fair market rates for the programming they charge you to watch, but currently refuse to air. </p>
+
+            </div>
+
+           
+             <div class="questionbox">
+                <div class="arrow"><img src="images/arrow-down.png" /></div>
+                <h2 class="question">Q. How can I keep watching my local station if they block it?</h2>
+            </div>
+            <div class="answer">
+                <p>A: You never have to miss a minute of your local news and weather. Download our station's Plus App now to stream your local news, weather and sports updates. To watch live sports and all your favorite network programming on this channel, we recommend you switch providers. </p>
+            </div>
+
+             <div class="questionbox">
+                <div class="arrow"><img src="images/arrow-down.png" /></div>
+                <h2 class="question">Q. Why is Optimum refusing to reach an agreement that will keep my station on their service? </h2>
+            </div>
+            <div class="answer">
+                <p>A: Only Optimum can answer that question, but their track record is telling. We've reached fair agreements with hundreds of providers to ensure our viewers have access to live sports, critical local news and weather and popular programming. We have not experienced a blackout in years. </p>
+
+              <p>In the past year alone, Optimum has had blackouts with several different providers, accumulated a n incredible amount of debt and is regularly cited for poor customer service and unfair business practices. </p>
+            </div>
+
+
+             <div class="questionbox">
+                <div class="arrow"><img src="images/arrow-down.png" /></div>
+                <h2 class="question">Q. Why does Optimum have to pay to carry my local station? </h2>
+            </div>
+            <div class="answer">
+                <p>A. Optimum includes your local station as part of the TV packages it sells. The news, weather, and live sports we provide are local products, and like every business in our community, we deserve to be paid fairly for our products. </p>
+            </div>
+
+
+             <div class="questionbox">
+                <div class="arrow"><img src="images/arrow-down.png" /></div>
+                <h2 class="question">Q. Optimum is saying that the local station is demanding big fee increases, which will be passed on to viewers. Is that true? </h2>
+            </div>
+            <div class="answer">
+                <p>A: That is an example of Optimum making misleading statements. Optimum sets the rate it bills its customers, not us. All we ask is for Optimum to pay us a fair, market-based rate to carry our station. If Optimum is raising your bill or making threats that you will pay more, you can choose a different provider.</p>
+            </div>
+
+
+             <div class="questionbox">
+                <div class="arrow"><img src="images/arrow-down.png" /></div>
+                <h2 class="question">Q. Isn't it unfair that I'm unable to watch my local channel because two giant companies are fighting each other?</h2>
+            </div>
+            <div class="answer">
+               <p>Absolutely. You pay your bill to Optimum every month and Optimum should provide the content you pay for. Unfortunately, Optimum has a history of failing to reach agreements with content providers and using blackouts as a negotiating tactic. They are willing to sacrifice their customers to avoid paying fair prices for the programming and services we provide. </p>  
+                <p>Download our station's Plus App now to continue watching local news and weather, and switch to another provider to get all of your favorite programming.</p>
+            </div>
+
+
+        </section>
+        <footer>©TEGNA Inc. 2025. All Rights Reserved.</footer>
+    </main>
+
+    <!-- PIXEL -->
+<script async referrerpolicy="no-referrer-when-downgrade" src='https://tag.simpli.fi/sifitag/60067f1e-0430-4814-9370-4ed52b02002d'></script>
+<script type="text/javascript">
+
+function phone(){
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.src = "https://tag.simpli.fi/sifitag/7a8cea21-a94a-452b-b569-914b7f807807";
+  document.getElementsByTagName('head')[0].appendChild(s);
+}
+</script>
+
+</body>
+</html>
