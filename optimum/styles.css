@@ -435,9 +435,10 @@ main img {
 }
 
 .textbold {
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1.2;
     margin: 20px;
+    font-size: larger;
 }
 
 .textbold a:link {
