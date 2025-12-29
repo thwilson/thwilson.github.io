@@ -299,6 +299,11 @@ main img {
     color: white;
 }
 
+.nostationrow a:visited {
+    text-decoration: none;
+    color: orange;
+}
+
 .nostationrow p {
     font-size: 30px;
 }
