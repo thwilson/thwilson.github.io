@@ -291,48 +291,18 @@ main img {
 
 .nostationrow a:link {
     text-decoration: none ;
-    color: white !important;
 }
 
 .nostationrow a:hover {
     text-decoration: underline ;
-    color: white;
 }
 
 .nostationrow a:visited {
     text-decoration: none;
-    color: #f76d25;
 }
 
 .nostationrow p {
     font-size: 30px;
-}
-
-.nostationrowdark {
-    background-color:#fff; ;
-    color: #000;
-    margin: 0 auto;
-    padding: 10px;
-    line-height: 1.2;
-    margin: 0 auto;
-    display: block;
-    flex-wrap: wrap;
-    overflow: auto;
-    text-align: center;
-}
-
-.nostationrow p a {
-    color: #000;
-}
-
-.nostationrowdark a:hover {
-    text-decoration: underline ;
-    color: #000;
-}
-
-.nostationrow a:link {
-    text-decoration: none ;
-    color: #000;
 }
 
 .nostationrowbuttons {
