@@ -286,7 +286,11 @@ main img {
 }
 
 .nostationrow p a {
-    color: white;
+    color: #f76d25; 
+}
+
+.nostationrowtel p a {
+    color: #fff;
 }
 
 .nostationrow a:link {
@@ -313,6 +317,10 @@ main img {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: baseline;
+}
+
+.orangelink {
+    color: #f76d25 !important;
 }
 
 .player-video {
@@ -409,6 +417,10 @@ main img {
    text-align: center;
 }
 
+.telwhite {
+    color: #fff !important;
+}
+
 .textbold {
     font-weight: bold;
     line-height: 1.2;
@@ -418,7 +430,6 @@ main img {
 
 .textbold a:link {
     text-decoration: none;
-    color: white;
 }
 
 .textbold a:hover {
